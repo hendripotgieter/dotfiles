@@ -1,0 +1,22 @@
+# Helpful
+alias dev='cd ~/Development'
+alias path='echo -e ${PATH//:/\\n}'
+alias reload='exec ${SHELL} -l'
+alias flush_dns='sudo killall -HUP mDNSResponder'
+
+# Common files for editing
+alias sudo_hosts='sudo nano /etc/hosts'
+
+# System
+alias update='cd ~/Development/hendri/dotfiles; sh update.sh'
+alias show_files='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
+alias hide_files='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
+
+# IP
+alias whatismyip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+# Git
+alias gs="git status"
+alias ga="git add -A"
+alias gc="gitmoji -c"
+alias gp="git push"

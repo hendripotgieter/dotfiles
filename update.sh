@@ -1,5 +1,5 @@
 #!/bin/sh 
-#git pull
+git pull
 
 echo "Updating Homebrew"
 brew update && brew upgrade && brew cleanup && brew cask cleanup; brew bundle; brew doctor

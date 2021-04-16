@@ -6,7 +6,9 @@ tap 'homebrew/cask-versions'
 ## Shell Utilities
 brew 'autojump'
 brew 'zsh'
+brew 'zsh-autosuggestions'
 brew 'zsh-completions'
+brew 'zsh-syntax-highlighting'
 brew 'tmux'
 brew 'docker-compose'
 brew 'youtube-dl'
@@ -36,7 +38,6 @@ cask 'slack'
 cask 'skype'
 
 ## Productivity
-cask 'alfred'
 cask 'go2shell'
 cask 'docker'
 cask 'google-chrome'

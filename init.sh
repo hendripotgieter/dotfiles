@@ -14,11 +14,12 @@ xcode-select --install
 
 echo "Installing Oh My Zsh"
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
-git clone git://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
-echo "source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-sed -io 's/^plugins=.*/plugins=(autojump git brew common-aliases zsh-autosuggestions copydir copyfile encode64 node osx sublime tmux xcode pod docker git-extras git-prompt)/' ~/.zshrc
+sed -io 's/^plugins=.*/plugins=(autojump git brew common-aliases copydir copyfile encode64 node osx sublime tmux xcode pod docker git-extras git-prompt)/' ~/.zshrc
 sed -io 's/^ZSH_THEME.*/ZSH_THEME="dpoggi"/' ~/.zshrc
+ln -s $PWD/root-configs/.aliases ~/.aliases
+ln -s $PWD/root-configs/.my-zshrc ~/.my-zshrc
+echo -e "ZSH_DISABLE_COMPFIX=true\n$(cat ~/.zshrc)" > ~/.zshrc
+echo 'source ~/.my-zshrc' >> ~/.zshrc
 
 echo "Installing Tmux Settings"
 git clone https://github.com/gpakosz/.tmux.git ~/.tmux
@@ -37,8 +38,5 @@ git config --global core.editor $(which nano)
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 git config --global alias.tree "log --graph --full-history --all --color --date=short --pretty=format:'%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset'"
 
-
-echo "Enabling Services"
-open /Applications/Alfred\ 4.app
-open /Applications/Clipy.app
-open /Applications/Rectangle.app
+echo "Done. Reload Shell"
+exec ${SHELL} -l
