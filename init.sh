@@ -26,6 +26,9 @@ git clone https://github.com/gpakosz/.tmux.git ~/.tmux
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 cp ~/.tmux/.tmux.conf.local ~/
 
+echo "Ubersicht Widget Linking"
+ln -s $PWD/ubersicht-widgets ~/Library/Application\ Support/Übersicht/widgets/ubersicht-widgets
+
 echo "Configrating Git"
 git config --global merge.tool diffmerge
 git config --global merge.conflictstyle diff3

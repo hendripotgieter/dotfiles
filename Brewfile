@@ -57,7 +57,6 @@ cask 'diffmerge'
 cask 'gpg-suite'
 cask 'postman'
 cask 'dbeaver-community'
-cask 'sourcetree'
 
 ## Favourites
 cask 'adobe-acrobat-reader'
@@ -68,8 +67,10 @@ cask 'lastpass'
 cask 'microsoft-teams'
 cask 'spotify'
 cask 'tunnelblick'
+cask 'ubersicht'
 cask 'vlc'
 cask 'whatsapp'
+cask 'zoom'
 
 # Fonts
 cask 'font-fira-code'
