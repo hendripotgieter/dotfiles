@@ -30,7 +30,7 @@ brew 'diff-so-fancy'
 brew 'git'
 brew 'gitmoji'
 brew 'awscli'
-brew 'n'
+brew 'nvm'
 
 # Mac Apps
 ## Communication
