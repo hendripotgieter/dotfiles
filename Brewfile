@@ -1,6 +1,7 @@
 # Taps
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
+tap 'AdoptOpenJDK/openjdk'
 
 # Install CLI Tools
 ## Shell Utilities
@@ -26,10 +27,12 @@ brew 'mas'
 brew 'trash'
 
 ## Dev Utilities
+brew 'awscli'
 brew 'diff-so-fancy'
 brew 'git'
 brew 'gitmoji'
-brew 'awscli'
+brew 'jenv'
+brew 'java'
 brew 'nvm'
 
 # Mac Apps
