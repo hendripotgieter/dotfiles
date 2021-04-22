@@ -32,7 +32,6 @@ brew 'diff-so-fancy'
 brew 'git'
 brew 'gitmoji'
 brew 'jenv'
-brew 'java'
 brew 'nvm'
 
 # Mac Apps
@@ -56,10 +55,13 @@ cask 'namechanger'
 cask 'visual-studio-code'
 
 ## Development
+cask 'adoptopenjdk8'
+cask 'adoptopenjdk11'
+cask 'adoptopenjdk15'
+cask 'dbeaver-community'
 cask 'diffmerge'
 cask 'gpg-suite'
 cask 'postman'
-cask 'dbeaver-community'
 
 ## Favourites
 cask 'adobe-acrobat-reader'

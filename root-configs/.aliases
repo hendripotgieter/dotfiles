@@ -3,6 +3,7 @@ alias dev='cd ~/Development'
 alias path='echo -e ${PATH//:/\\n}'
 alias reload='exec ${SHELL} -l'
 alias flush_dns='sudo killall -HUP mDNSResponder'
+alias png='ping www.google.co.za'
 
 # Common files for editing
 alias sudo_hosts='sudo nano /etc/hosts'
