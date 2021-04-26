@@ -52,6 +52,7 @@ cask 'appcleaner'
 cask 'namechanger'
 
 ## Editor
+cask 'android-studio'
 cask 'visual-studio-code'
 
 ## Development
@@ -60,7 +61,6 @@ cask 'adoptopenjdk11'
 cask 'adoptopenjdk15'
 cask 'dbeaver-community'
 cask 'diffmerge'
-cask 'gpg-suite'
 cask 'postman'
 
 ## Favourites
@@ -74,6 +74,7 @@ cask 'spotify'
 cask 'tunnelblick'
 cask 'ubersicht'
 cask 'vlc'
+cask 'webtorrent'
 cask 'whatsapp'
 cask 'zoom'
 

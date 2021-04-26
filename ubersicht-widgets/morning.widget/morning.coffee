@@ -22,7 +22,7 @@ style: """
 
   .line1
    font-size: 10em
-   color: rgba(143, 249, 160, 1);
+   color: rgba(46, 46, 41, 1);
    font-weight:700
    text-align:left
 
@@ -36,11 +36,11 @@ style: """
    margin-top: -30px
    font-size: 1.3em
    font-weight:700
-   color: rgba(143, 249, 160, 0.7);
+   color: rgba(46, 46, 41, 0.7);
 
   .description
    font-size: 700;
-   color: rgba(143, 249, 160 0.7);
+   color: rgba(46, 46, 41, 0.7);
 
   .time
    color: rgba(255, 255, 255, 0.9);
