@@ -10,6 +10,8 @@ PATH=/usr/local/sbin:$PATH
 PATH=$HOME/.jenv/bin:$HOME/.local/bin:$PATH
 N_PREFIX=$HOME/.local
 NVM_DIR=$HOME/.nvm
+NODE_PATH=/usr/local/lib/node_modules
+LD_LIBRARY_PATH=/usr/local/lib/instantclient_19_8
 
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion

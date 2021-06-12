@@ -22,7 +22,7 @@ style: """
 
   .line1
    font-size: 10em
-   color: rgba(46, 46, 41, 1);
+   color: rgba(0, 0, 0, 1);
    font-weight:700
    text-align:left
 
@@ -36,14 +36,21 @@ style: """
    margin-top: -30px
    font-size: 1.3em
    font-weight:700
-   color: rgba(46, 46, 41, 0.7);
+   color: rgba(0, 0, 0, 0.7);
 
   .description
    font-size: 700;
-   color: rgba(46, 46, 41, 0.7);
+   color: rgba(0, 0, 0, 0.7);
 
   .time
    color: rgba(255, 255, 255, 0.9);
+
+  .goal-heading
+   margin-top: 100px
+   margin-bottom: 10px
+
+  .goal-items
+   color: rgba(0, 0, 0, 1);
 
 """
 
@@ -54,8 +61,15 @@ render: -> """
       <span class="hour"></span><span class="twee-kolle">:</span><span class="min"></span>
     </div>
     <div class="other-time-zones"></div>
-  </div>
 
+  <h1 class="goal-heading">FOCUS ON</h1>
+  <div class="goal-items">
+    - MIT Onboarding<br>
+    - Liminal Occupancy<br>
+    - InstaSense + EPS<br>
+    - AWS Certificate<br>
+  </div>
+  </div>
 """
 
 #Update function

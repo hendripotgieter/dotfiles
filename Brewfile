@@ -2,6 +2,7 @@
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'AdoptOpenJDK/openjdk'
+tap 'hivemq/mqtt-cli'
 
 # Install CLI Tools
 ## Shell Utilities
@@ -28,10 +29,13 @@ brew 'trash'
 
 ## Dev Utilities
 brew 'awscli'
+brew 'aws-cdk'
+brew 'aws-elasticbeanstalk'
 brew 'diff-so-fancy'
 brew 'git'
 brew 'gitmoji'
 brew 'jenv'
+brew 'mqtt-cli'
 brew 'nvm'
 
 # Mac Apps
@@ -61,6 +65,7 @@ cask 'adoptopenjdk11'
 cask 'adoptopenjdk15'
 cask 'dbeaver-community'
 cask 'diffmerge'
+cask 'pingplotter'
 cask 'postman'
 
 ## Favourites
@@ -71,6 +76,7 @@ cask 'keepingyouawake'
 cask 'lastpass'
 cask 'microsoft-teams'
 cask 'spotify'
+cask 'teamviewer'
 cask 'tunnelblick'
 cask 'ubersicht'
 cask 'vlc'
