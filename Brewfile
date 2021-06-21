@@ -28,6 +28,7 @@ brew 'mas'
 brew 'trash'
 
 ## Dev Utilities
+brew 'angular-cli'
 brew 'awscli'
 brew 'aws-cdk'
 brew 'aws-elasticbeanstalk'
