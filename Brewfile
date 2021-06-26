@@ -59,6 +59,7 @@ cask 'namechanger'
 ## Editor
 cask 'android-studio'
 cask 'visual-studio-code'
+cask 'apache-directory-studio'
 
 ## Development
 cask 'adoptopenjdk8'
