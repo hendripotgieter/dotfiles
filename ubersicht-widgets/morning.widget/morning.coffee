@@ -8,7 +8,7 @@ refreshFrequency: 30000
 style: """
 
   color: #fff
-  font-family: 'Arial Rounded MT Bold', 'Dosis', Helvetica Neue, Arial
+  font-family: 'Montserrat', 'Arial Rounded MT Bold', 'Dosis', Helvetica Neue, Arial
 
   .container
    margin-top:10%
@@ -21,8 +21,8 @@ style: """
    margin-left:0
 
   .line1
-   font-size: 10em
-   color: rgba(0, 0, 0, 1);
+   font-size: 8em
+   color: rgba(255, 255, 255, 0.5);
    font-weight:700
    text-align:left
 
@@ -33,14 +33,14 @@ style: """
    font-size: 1.3em
 
   .other-time-zones
-   margin-top: -30px
+   margin-top: 0px
    font-size: 1.3em
    font-weight:700
-   color: rgba(0, 0, 0, 0.7);
+   color: rgba(255, 255, 255, 0.3);
 
   .description
    font-size: 700;
-   color: rgba(0, 0, 0, 0.7);
+   color: rgba(255, 255, 255, 0.3);
 
   .time
    color: rgba(255, 255, 255, 0.9);
@@ -50,7 +50,7 @@ style: """
    margin-bottom: 10px
 
   .goal-items
-   color: rgba(0, 0, 0, 1);
+   color: rgba(255, 255, 255, 0.5);
 
 """
 
@@ -61,14 +61,6 @@ render: -> """
       <span class="hour"></span><span class="twee-kolle">:</span><span class="min"></span>
     </div>
     <div class="other-time-zones"></div>
-
-  <h1 class="goal-heading">FOCUS ON</h1>
-  <div class="goal-items">
-    - MIT Onboarding<br>
-    - Liminal Occupancy<br>
-    - InstaSense + EPS<br>
-    - AWS Certificate<br>
-  </div>
   </div>
 """
 
