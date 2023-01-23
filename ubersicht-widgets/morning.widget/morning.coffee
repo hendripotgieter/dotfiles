@@ -11,7 +11,7 @@ style: """
   font-family: 'Montserrat', 'Arial Rounded MT Bold', 'Dosis', Helvetica Neue, Arial
 
   .container
-   margin-top:10%
+   margin-top:5%
    height:300px
    width:100vw
    font-weight: lighter

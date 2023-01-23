@@ -1,7 +1,3 @@
-# Load extensions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Activate plugins
 plugins=(git zsh-completions)
 
@@ -13,10 +9,10 @@ NVM_DIR=$HOME/.nvm
 NODE_PATH=/usr/local/lib/node_modules
 LD_LIBRARY_PATH=/usr/local/lib/instantclient_19_8
 
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+# [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "$(brew --prefix)/opt/nrevm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
-eval "$(jenv init -)"
+# eval "$(jenv init -)"
 
 # Set default editor
 export EDITOR='code'
@@ -71,5 +67,9 @@ ZSH_THEME_HG_PROMPT_CLEAN=""
 ZSH_THEME_HG_PROMPT_DIRTY="$my_orange *%{$reset_color%}"
 ZSH_THEME_HG_PROMPT_SUFFIX="$FG[075])%{$reset_color%}"
 
+eval "$(pyenv init -)"
+
 # show colors
 # spectrum_ls
+
+# nvm use intel12

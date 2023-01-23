@@ -4,6 +4,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias reload='exec ${SHELL} -l'
 alias flush_dns='sudo killall -HUP mDNSResponder'
 alias png='ping www.google.co.za'
+alias open_deedee="open 'smb://hpotgieter:Cidepo42!@10.1.1.1'"
 
 # Common files for editing
 alias sudo_hosts='sudo nano /etc/hosts'
@@ -23,4 +24,5 @@ alias gc="gitmoji -c"
 alias gp="git push"
 alias gconfig_mit="git config user.email \"hendri@mit.edu\""
 alias gconfig_potgieter="git config user.email \"hendri@potgieter.co\""
-alias gua="git fetch && git checkout master && git reset --hard origin/master && git checkout release && git reset --hard origin/release && git merge master && git checkout develop && git reset --hard origin/develop && git merge release"
+alias gconfig_epiuse="git config user.email \"hpotgieter@epi-use.epiuse.co.za\""
+alias gua="git fetch && git checkout master && git reset --hard origin/master && git checkout develop && git reset --hard origin/develop && git merge master"

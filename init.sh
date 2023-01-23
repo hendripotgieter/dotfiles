@@ -13,8 +13,8 @@ echo "Install XCode CLI Tool"
 xcode-select --install
 
 echo "Installing Oh My Zsh"
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-sed -io 's/^plugins=.*/plugins=(autojump git brew common-aliases copydir copyfile encode64 node osx sublime tmux xcode pod docker git-extras git-prompt)/' ~/.zshrc
+sh -c "$(wget -qO- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sed -io 's/^plugins=.*/plugins=(autojump git brew common-aliases copydir copyfile encode64 node macos sublime tmux xcode pod docker git-extras git-prompt zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
 sed -io 's/^ZSH_THEME.*/ZSH_THEME="dpoggi"/' ~/.zshrc
 ln -s $PWD/root-configs/.aliases ~/.aliases
 ln -s $PWD/root-configs/.my-zshrc ~/.my-zshrc
